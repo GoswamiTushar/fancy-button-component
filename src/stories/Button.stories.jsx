@@ -6,11 +6,6 @@ import Button from '../components/Button';
 export default {
   title: 'Example/Button',
   component: Button,
-  parameters: {
-    docs: {
-      label: "test",
-    },
-  },
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
