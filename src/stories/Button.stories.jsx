@@ -6,6 +6,11 @@ import Button from '../components/Button';
 export default {
   title: 'Example/Button',
   component: Button,
+  parameters: {
+    docs: {
+      label: "test",
+    },
+  },
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -105,5 +110,17 @@ MediumText.args = {
   size: 'medium', // small || medium || large
   disabled: false,
   isLoading: false,
+  onClick: () => void 0,
+};
+
+export const MediumLoading = Template.bind({});
+MediumLoading.args = {
+  label: 'test',
+  variant: 'contained', // text || contained || outlined
+  type: 'button', //  button || submit
+  classname: 'test', // Single classname
+  size: 'medium', // small || medium || large
+  disabled: false,
+  isLoading: true,
   onClick: () => void 0,
 };
